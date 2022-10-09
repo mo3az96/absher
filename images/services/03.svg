@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="43" height="36" viewBox="0 0 43 36">
+  <g id="Component_10_1" data-name="Component 10 – 1" transform="translate(1)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="4.524" cy="4.524" r="4.524" transform="translate(6.896 13.782)" fill="none" stroke="#b69c49" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_28968" data-name="Path 28968" d="M61.109,148.524a6.034,6.034,0,0,1,11.684,0" transform="translate(-55.531 -121.171)" fill="none" stroke="#b69c49" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <rect id="Rectangle_17480" data-name="Rectangle 17480" width="36" height="30" rx="5" transform="translate(0 5)" fill="none" stroke="#b69c49" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <g id="Ellipse_5" data-name="Ellipse 5" transform="translate(19)" fill="#fff" stroke="#b69c49" stroke-width="2">
+      <circle cx="11.5" cy="11.5" r="11.5" stroke="none"/>
+      <circle cx="11.5" cy="11.5" r="10.5" fill="none"/>
+    </g>
+    <path id="edit" d="M13.657,2.343a2,2,0,0,1,0,2.828L6.27,12.558a2.5,2.5,0,0,1-1.161.658l-2.291.573a.5.5,0,0,1-.606-.606l.573-2.291A2.5,2.5,0,0,1,3.442,9.73l7.386-7.386A2,2,0,0,1,13.657,2.343ZM10.121,4.464,4.149,10.437a1.5,1.5,0,0,0-.395.7l-.371,1.483,1.483-.371a1.5,1.5,0,0,0,.7-.395l5.972-5.973ZM11.535,3.05l-.707.707,1.414,1.414.708-.707A1,1,0,0,0,11.535,3.05Z" transform="translate(22.28 3.719)" fill="#b69c49"/>
+  </g>
+</svg>

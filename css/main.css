@@ -69,6 +69,23 @@ input[type=number] {
   }
 }
 
+.page-content {
+  padding: 75px 0;
+}
+
+.pattern-page {
+  background-color: #f3f3f3;
+  position: relative;
+}
+.pattern-page .bg-pattern {
+  position: absolute;
+  top: 72px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  opacity: 0.25;
+}
+
 @font-face {
   font-family: "Bukra";
   src: url("../fonts/29LTBukra/29LTBukra-Light.ttf") format("woff2"), url("../fonts/29LTBukra/29LTBukra-Light.woff") format("woff"), url("../fonts/29LTBukra/29LTBukra-Light.ttf") format("truetype");
@@ -1204,6 +1221,71 @@ header {
   display: block;
 }
 
+.breadcrumb-sec {
+  position: relative;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 65px 0 55px;
+}
+.breadcrumb-sec:after {
+  background: linear-gradient(90deg, rgba(179, 155, 75, 0.1215686275) 0%, #b69c49 100%);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 991px) {
+  .breadcrumb-sec {
+    display: none;
+  }
+}
+
+.page-title {
+  position: relative;
+  z-index: 2;
+  font-size: 38px;
+  color: #fff;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+.breadcrumb-list {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+.breadcrumb-list li {
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.breadcrumb-list li ~ li::before {
+  content: "/";
+  margin: 0 10px;
+}
+.breadcrumb-list a {
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+.breadcrumb-list a:hover {
+  color: #333333;
+}
+
 section {
   overflow: hidden;
 }
@@ -1322,6 +1404,31 @@ section {
   inset-inline-end: -400px;
   opacity: 34%;
   z-index: 1;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.blog-grid .grid-item {
+  max-width: 100%;
+  overflow: hidden;
+}
+@media (max-width: 1199px) {
+  .blog-grid {
+    gap: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .blog-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 footer {

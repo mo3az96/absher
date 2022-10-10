@@ -137,6 +137,34 @@ $(document).ready(function () {
       $("body").removeClass("overflow");
     });
   }
+  /* ~~~~~~~~~~~~~~~ States Counter ~~~~~~~~~~~~~~~ */
+  if ($(".states-cont").length) {
+    var a = 0;
+    $(window).scroll(function () {
+      if (
+        a == 0 &&
+        $(this).scrollTop() >= $(".states-cont").offset().top - 500
+      ) {
+        $(".state-number span").each(function () {
+          $(this)
+            .prop("Counter", 0)
+            .animate(
+              {
+                Counter: $(this).text(),
+              },
+              {
+                duration: 1000,
+                easing: "swing",
+                step: function (now) {
+                  $(this).text(Math.ceil(now));
+                },
+              }
+            );
+        });
+        a++;
+      }
+    });
+  }
 });
 
 /* ~~~~~~~~~~~~~~~ Lazyload ~~~~~~~~~~~~~~~ */

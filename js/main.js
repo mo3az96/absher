@@ -165,6 +165,17 @@ $(document).ready(function () {
       }
     });
   }
+  /* ~~~~~~~~~~~~~~~ About FAQ ~~~~~~~~~~~~~~~ */
+  $(".acc-head").click(function () {
+    $(".acc-head").not(this).removeClass("active");
+    $(this).toggleClass("active");
+    if ($(this).siblings().css("display") == "none") {
+      $(this).siblings().slideDown(500);
+    } else {
+      $(this).siblings().slideUp(500);
+    }
+    $(".acc-head").not(this).siblings().slideUp(500);
+  });
 });
 
 /* ~~~~~~~~~~~~~~~ Lazyload ~~~~~~~~~~~~~~~ */

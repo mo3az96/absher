@@ -129,6 +129,13 @@ input[type=search]::-webkit-search-results-decoration {
 .form-group {
   margin-bottom: 15px;
 }
+.form-group label {
+  opacity: 85%;
+  color: #242424;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
 
 .form-control {
   height: 56px;
@@ -183,10 +190,16 @@ html[dir=ltr] .form-control::placeholder {
   }
 }
 
+textarea.form-control {
+  height: 130px;
+  resize: none;
+  padding-block: 15px;
+}
+
 .main-form-line {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 9px;
+  gap: 0 9px;
 }
 .main-form-line .form-control {
   height: 48px;
@@ -276,6 +289,9 @@ html[dir=ltr] .form-control::placeholder {
   align-items: center;
   justify-content: space-between;
   padding: 0 15px;
+}
+.main-form-line .select2-container--default .select2-selection--single {
+  height: 48px;
 }
 html[dir=rtl] .select2-container--default .select2-selection--single .select2-selection__rendered {
   padding: 0;
@@ -1937,6 +1953,176 @@ section {
   align-items: center;
   justify-content: center;
   margin-top: 60px;
+}
+
+.contact-page {
+  background-color: #fff;
+  position: relative;
+  padding: 66px 0 60px;
+}
+.contact-page .bg-pattern {
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  opacity: 0.25;
+  display: none;
+}
+@media (max-width: 991px) {
+  .contact-page {
+    padding: 40px 0;
+  }
+}
+
+.mapouter {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.contact-div {
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  border: 2px solid #efe5c4;
+  border-radius: 20px;
+  padding: 30px 40px 25px;
+  margin-top: 80px;
+  display: flex;
+}
+@media (max-width: 991px) {
+  .contact-div {
+    flex-direction: column;
+    padding: 25px 15px;
+  }
+}
+.contact-div .sec-head {
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+@media (max-width: 991px) {
+  .contact-div .sec-head {
+    align-items: center;
+  }
+}
+
+.contact-form {
+  width: 100%;
+}
+.contact-form .main-form-line {
+  gap: 0 15px;
+}
+.contact-form .form-control {
+  border: 2px solid #efe5c4;
+}
+.contact-form .form-control:focus {
+  border-color: #b69c49;
+}
+.contact-form .select2-container--default .select2-selection--single {
+  border: 2px solid #efe5c4;
+}
+.contact-form label {
+  color: #121212;
+  opacity: 1;
+}
+.contact-form .btn-primary {
+  width: 130px;
+  height: 48px;
+  margin: 0;
+  -webkit-margin-start: auto;
+          margin-inline-start: auto;
+}
+
+.contact-head-desc {
+  font-size: 15px;
+  color: #5C5C5C;
+  margin-bottom: 32px;
+}
+@media (max-width: 991px) {
+  .contact-head-desc {
+    text-align: center;
+  }
+}
+
+.contact-methods {
+  -webkit-margin-start: 35px;
+          margin-inline-start: 35px;
+  width: 100%;
+  max-width: 430px;
+  flex-shrink: 0;
+}
+@media (max-width: 991px) {
+  .contact-methods {
+    margin: auto;
+    margin-top: 30px;
+  }
+}
+
+.contact-method {
+  border: 2px solid #efe5c4;
+  border-radius: 15px;
+  padding: 24px;
+  margin-bottom: 30px;
+}
+.contact-method:last-of-type {
+  margin-bottom: 0;
+}
+.contact-method .method-head {
+  display: flex;
+  align-items: center;
+}
+.contact-method .method-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  -webkit-margin-end: 15px;
+          margin-inline-end: 15px;
+}
+.contact-method .method-title {
+  margin-bottom: 17px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #051441;
+}
+.contact-method span {
+  font-size: 16px;
+  color: #333333;
+}
+.contact-method .method-link-cont {
+  margin-top: 7px;
+  display: flex;
+  justify-content: flex-end;
+}
+.contact-method.whats-method .method-icon,
+.contact-method.whats-method .method-link {
+  background-color: #4caf50;
+}
+.contact-method.phone-method .method-icon,
+.contact-method.phone-method .method-link {
+  background-color: #b69c49;
+}
+.contact-method.mail-method .method-icon,
+.contact-method.mail-method .method-link {
+  background-color: #5C5C5C;
+}
+.contact-method .method-link {
+  width: 130px;
+  height: 38px;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.contact-method .method-link:hover {
+  background-color: #b69c49;
 }
 
 footer {

@@ -176,6 +176,25 @@ $(document).ready(function () {
     }
     $(".acc-head").not(this).siblings().slideUp(500);
   });
+
+  /* ~~~~~~~~~~~~~~~ gallery Swiper ~~~~~~~~~~~~~~~ */
+  var gallerySwiper = new Swiper(".gallery-slider .swiper", {
+    loop: true,
+    autoplay: {
+      delay: 10000,
+    },
+    pagination: {
+      el: ".gallery-slider .swiper-pagination",
+      clickable: true,
+    },
+    slidesPerView: 1,
+    spaceBetween: 15,
+    on: {
+      init: function (swiper) {
+        lazyLoad();
+      },
+    },
+  });
 });
 
 /* ~~~~~~~~~~~~~~~ Lazyload ~~~~~~~~~~~~~~~ */

@@ -195,6 +195,44 @@ $(document).ready(function () {
       },
     },
   });
+
+  /* ~~~~~~~~~~~~~~~ Related Swiper ~~~~~~~~~~~~~~~ */
+
+  if ($(window).width() <= 991) {
+    $(".swiper-wrapperr")
+      .addClass("swiper-wrapper")
+      .removeClass("swiper-wrapperr");
+    var RelatedSwiper = new Swiper(".related-slider .swiper", {
+      loop: true,
+      pagination: {
+        el: ".related-slider .swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 15,
+        },
+        767: {
+          slidesPerView: 2,
+          spaceBetween: 15,
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 15,
+        },
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+      on: {
+        init: function (swiper) {
+          lazyLoad();
+        },
+      },
+    });
+  }
 });
 
 /* ~~~~~~~~~~~~~~~ Lazyload ~~~~~~~~~~~~~~~ */

@@ -197,7 +197,6 @@ $(document).ready(function () {
   });
 
   /* ~~~~~~~~~~~~~~~ Related Swiper ~~~~~~~~~~~~~~~ */
-
   if ($(window).width() <= 991) {
     $(".swiper-wrapperr")
       .addClass("swiper-wrapper")
@@ -233,6 +232,41 @@ $(document).ready(function () {
       },
     });
   }
+
+  $(".btns button[data-target]").click(function (e) {
+    e.preventDefault();
+    var target = $(this).data("target");
+    $('button[data-bs-target="' + target + '"]').trigger("click");
+  });
+
+  $("div.form-control .tags-input").keypress(function (e) {
+    if (e.keyCode == 13) {
+      var allTags = $(this).next("input").val();
+      var tag = $(this).val();
+      if (tag.length > 0) {
+        $(this)
+          .next("input")
+          .val(allTags + ", " + tag);
+        var delIcon =
+          "<svg xmlns='http://www.w3.org/2000/svg' width='9.02' height='9.018' viewBox='0 0 9.02 9.018'>  <path id='Icon_ionic-ios-close' data-name='Icon ionic-ios-close' d='M16.864,15.8l3.222-3.222a.755.755,0,0,0-1.068-1.068L15.8,14.73l-3.222-3.222a.755.755,0,1,0-1.068,1.068L14.729,15.8l-3.222,3.222a.755.755,0,1,0,1.068,1.068L15.8,16.865l3.222,3.222a.755.755,0,0,0,1.068-1.068Z' transform='translate(-11.285 -11.289)' fill='#fff'/></svg>";
+        $(this)
+          .parent(".form-control")
+          .prepend(
+            "<span>" +
+              tag +
+              "<a role='button' onclick='$(this).parent().remove()'>" +
+              delIcon +
+              "</a></span>"
+          );
+        $(this).val("");
+      }
+    }
+  });
+
+  $(".input-file-cont input").change(function () {
+    var file = $(".input-file")[0].files[0];
+    $(".file-val").text(file.name);
+  });
 });
 
 /* ~~~~~~~~~~~~~~~ Lazyload ~~~~~~~~~~~~~~~ */

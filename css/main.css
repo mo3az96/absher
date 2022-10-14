@@ -3547,6 +3547,30 @@ html[dir=ltr] .footer-a:hover {
     margin-bottom: 30px;
   }
 }
+.float-whats {
+  position: fixed;
+  bottom: 20px;
+  inset-inline-start: 20px;
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(180deg, #61fd7d 0%, #2bb826 100%);
+  border-radius: 59px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 767px) {
+  .float-whats {
+    bottom: 20px;
+    inset-inline-start: 10px;
+  }
+}
+.float-whats:hover {
+  opacity: 0.8;
+}
+
 .menu-overlay {
   position: fixed;
   top: 0;

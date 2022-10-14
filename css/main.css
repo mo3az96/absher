@@ -779,6 +779,7 @@ main:after {
   .about-logo {
     width: 290px;
     height: 290px;
+    margin: auto;
     margin-bottom: 25px;
   }
 }

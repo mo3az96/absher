@@ -408,7 +408,6 @@ html[dir=ltr] .select2-container--default .select2-selection--single .select2-se
   }
 }
 .btns .prev-btn {
-  width: 170px;
   height: 56px;
   border-radius: 30px;
   display: flex;

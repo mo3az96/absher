@@ -1135,11 +1135,14 @@ main:after {
           margin-inline-start: 7px;
   transition: transform 0.3s ease-in-out;
 }
+html[dir=ltr] .blog-item .read-more svg {
+  transform: rotate(180deg);
+}
 html[dir=rtl] .blog-item .read-more:hover svg {
   transform: translateX(-3px);
 }
 html[dir=ltr] .blog-item .read-more:hover svg {
-  transform: translateX(3px);
+  transform: rotate(180deg) translateX(-3px);
 }
 
 .partners-slider .swiper {

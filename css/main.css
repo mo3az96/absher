@@ -423,6 +423,7 @@ html[dir=ltr] .select2-container--default .select2-selection--single .select2-se
 .btns .prev-btn:hover {
   color: #fff;
   background-color: #333333;
+  border-color: #333333;
 }
 
 div.form-control {

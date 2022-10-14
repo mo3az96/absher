@@ -3550,9 +3550,9 @@ html[dir=ltr] .footer-a:hover {
 .float-whats {
   position: fixed;
   bottom: 20px;
-  inset-inline-start: 20px;
-  width: 64px;
-  height: 64px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
   background: linear-gradient(180deg, #61fd7d 0%, #2bb826 100%);
   border-radius: 59px;
   display: flex;
@@ -3564,7 +3564,7 @@ html[dir=ltr] .footer-a:hover {
 @media (max-width: 767px) {
   .float-whats {
     bottom: 20px;
-    inset-inline-start: 10px;
+    left: 10px;
   }
 }
 .float-whats:hover {

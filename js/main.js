@@ -2,6 +2,19 @@ $(window).on("load", function () {
   $("body").removeClass("overflow");
 });
 $(document).ready(function () {
+  /* ~~~~~~~~~~~~~~~ Fixed ~~~~~~~~~~~~~~~ */
+  if ($(this).scrollTop() >= 100) {
+    $("header").addClass("fixed");
+  } else {
+    $("header").removeClass("fixed");
+  }
+  $(window).scroll(function () {
+    if ($(this).scrollTop() >= 100) {
+      $("header").addClass("fixed");
+    } else {
+      $("header").removeClass("fixed");
+    }
+  });
   /* ~~~~~~~~~~~~~~~ INIT ~~~~~~~~~~~~~~~ */
   lazyLoad();
   new WOW().init();
@@ -266,6 +279,20 @@ $(document).ready(function () {
   $(".input-file-cont input").change(function () {
     var file = $(".input-file")[0].files[0];
     $(".file-val").text(file.name);
+  });
+
+  var singleSwiper = new Swiper(".single-blog-slider .swiper", {
+    pagination: {
+      el: ".single-blog-slider .swiper-pagination",
+      clickable: true,
+    },
+    slidesPerView: 1,
+    spaceBetween: 15,
+    on: {
+      init: function (swiper) {
+        lazyLoad();
+      },
+    },
   });
 });
 

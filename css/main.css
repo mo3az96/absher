@@ -1182,12 +1182,6 @@ html[dir=ltr] .blog-item .read-more:hover svg {
   max-width: 100%;
 }
 
-header {
-  background-color: #fff;
-  position: relative;
-  z-index: 9;
-}
-
 .header {
   display: flex;
   align-items: center;
@@ -1419,6 +1413,41 @@ header {
 @media (max-width: 991px) {
   .menu-btn {
     display: block;
+  }
+}
+
+header {
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+}
+header.fixed {
+  position: fixed;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.1019607843);
+}
+header.fixed .header {
+  padding: 15px 0;
+}
+header.fixed .logo {
+  position: static;
+  padding: 0;
+}
+header.fixed .logo img {
+  width: 30px;
+}
+header.fixed .logo:after {
+  display: none;
+}
+
+body {
+  padding-top: 106px;
+}
+@media (max-width: 991px) {
+  body {
+    padding-top: 90px;
   }
 }
 
@@ -3716,5 +3745,57 @@ html[dir=ltr] .footer-a:hover {
   .menu-contact:hover {
     background-color: #333333;
     color: #fff;
+  }
+}
+/*////////////////////////// edits*/
+.single-desc {
+  width: 100%;
+  overflow: hidden;
+}
+.single-desc .single-blog-cont {
+  max-width: 100%;
+  overflow: hidden;
+}
+.single-desc .single-blog-slider {
+  position: relative;
+}
+.single-desc .single-blog-slider .swiper ~ .swiper-pagination {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: 0;
+}
+.single-desc .single-blog-slider .swiper ~ .swiper-pagination .swiper-pagination-bullet {
+  border: 1px solid #b69c49;
+  border-radius: 5px;
+  background-color: transparent;
+  opacity: 1;
+  margin: 0 4px;
+  transition-property: width, background-color, border-color;
+  transition: 0.3s ease-in-out;
+}
+.single-desc .single-blog-slider .swiper ~ .swiper-pagination .swiper-pagination-bullet:hover {
+  border-color: #b69c49;
+}
+.single-desc .single-blog-slider .swiper ~ .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  border-color: #b69c49;
+  background-color: #b69c49;
+  width: 23px;
+}
+
+.single-desc .single-img {
+  height: 500px;
+}
+.single-desc .single-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: none;
+}
+@media (max-width: 767px) {
+  .single-desc .single-img {
+    height: 300px;
   }
 }/*# sourceMappingURL=main.css.map */

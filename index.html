@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/select2.min.css" />
     <link rel="stylesheet" href="css/fancybox.css" />
+    <link rel="stylesheet" href="css/intlTelInput.min.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
@@ -252,12 +253,9 @@
                   <input
                     type="tel"
                     class="form-control"
+                    id="phone"
                     placeholder="رقم الجوال"
                   />
-                  <span class="country-key">
-                    <span>966+</span>
-                    <img src="images/lang-ar.svg" class="img-fluid" />
-                  </span>
                 </div>
               </div>
               <div class="form-group">
@@ -1137,6 +1135,19 @@
     <script src="js/wow.min.js"></script>
     <script src="js/select2.min.js"></script>
     <script src="js/fancybox.umd.js"></script>
+    <script src="js/intlTelInput.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+      var input = document.querySelector("#phone");
+      window.intlTelInput(input, {
+        autoPlaceholder: "aggressive",
+        initialCountry: "sa",
+        separateDialCode:true,
+        excludeCountries: ["il"],
+        preferredCountries: ["sa", "kw", "ae", "bh", "om", "qa"],
+        utilsScript: "./js/utils.js",
+      });
+    </script>
   </body>
 </html>

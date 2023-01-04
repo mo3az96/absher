@@ -3839,4 +3839,57 @@ html[dir=ltr] .footer-a:hover {
   display: flex;
   align-items: center;
   font-size: 13px;
+}
+
+.top-bar-sec {
+  background-color: #f3f3f3;
+  line-height: 35px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: #5C5C5C;
+}
+
+.top-cont {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.top-news-title {
+  flex-shrink: 0;
+  height: 35px;
+  background-color: #b69c49;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 0 15px;
+  color: #fff;
+}
+
+.top-news-dismiss {
+  flex-shrink: 0;
+  fill: rgba(51, 51, 51, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.top-news-dismiss svg {
+  transform: rotate(45deg);
+}
+.top-news-dismiss:hover {
+  fill: #b69c49;
+}
+
+.news-cont {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0 10px;
+}
+.news-cont .news-link {
+  font-size: 13px;
+  color: #5C5C5C;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.news-cont .news-link:hover {
+  color: #b69c49;
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */

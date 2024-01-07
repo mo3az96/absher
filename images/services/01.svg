@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="38.5" height="32.5" viewBox="0 0 38.5 32.5">
   <g id="identification-card" transform="translate(-4.691 -8.128)">
-    <line id="Line_426" data-name="Line 426" x2="8" transform="translate(27.941 21.378)" fill="none" stroke="#b69c49" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
-    <line id="Line_427" data-name="Line 427" x2="8" transform="translate(27.941 27.378)" fill="none" stroke="#b69c49" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
-    <circle id="Ellipse_1" data-name="Ellipse 1" cx="4.524" cy="4.524" r="4.524" transform="translate(12.837 18.159)" fill="none" stroke="#b69c49" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
-    <path id="Path_28968" data-name="Path 28968" d="M61.109,148.524a6.034,6.034,0,0,1,11.684,0" transform="translate(-49.59 -116.793)" fill="none" stroke="#b69c49" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
-    <rect id="Rectangle_17480" data-name="Rectangle 17480" width="36" height="30" rx="5" transform="translate(5.941 9.378)" fill="none" stroke="#b69c49" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    <line id="Line_426" data-name="Line 426" x2="8" transform="translate(27.941 21.378)" fill="none" stroke="#7E2C8E" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    <line id="Line_427" data-name="Line 427" x2="8" transform="translate(27.941 27.378)" fill="none" stroke="#7E2C8E" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="4.524" cy="4.524" r="4.524" transform="translate(12.837 18.159)" fill="none" stroke="#7E2C8E" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    <path id="Path_28968" data-name="Path 28968" d="M61.109,148.524a6.034,6.034,0,0,1,11.684,0" transform="translate(-49.59 -116.793)" fill="none" stroke="#7E2C8E" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    <rect id="Rectangle_17480" data-name="Rectangle 17480" width="36" height="30" rx="5" transform="translate(5.941 9.378)" fill="none" stroke="#7E2C8E" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
   </g>
 </svg>
